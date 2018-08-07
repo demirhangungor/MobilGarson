@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Hoş Geldin :" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="102dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="MENÜLER"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/iskender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kavurma"
+        android:layout_marginEnd="-134dp"
+        android:layout_toStartOf="@+id/textView4"
+        android:text="İskender" />
+
+    <CheckBox
+        android:id="@+id/hamburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/iskender"
+        android:layout_marginTop="159dp"
+        android:text="Hamburger" />
+
+    <CheckBox
+        android:id="@+id/pide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hamburger"
+        android:layout_below="@+id/hamburger"
+        android:text="Pide" />
+
+    <CheckBox
+        android:id="@+id/kavurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hamburger"
+        android:layout_below="@+id/pide"
+        android:text="Saç Kavurma" />
+
+
+    <CheckBox
+        android:id="@+id/doner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iskender"
+        android:layout_below="@+id/iskender"
+        android:text="Döner Menü" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iskender"
+        android:layout_below="@+id/doner">
+
+        <RadioButton
+            android:id="@+id/kola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/iskender"
+            android:text="Kola" />
+
+        <RadioButton
+            android:id="@+id/ayran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kola"
+            android:layout_toEndOf="@+id/iskender"
+            android:text="Ayran" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:onClick="dashBoardClick"
+        android:text="SEÇİNİZ" />
+
+</RelativeLayout>
